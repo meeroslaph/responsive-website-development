@@ -1,0 +1,93 @@
+img {
+    margin-top: 10px;
+}
+
+h1 {
+    margin-top: 25px;
+    color: #808080;
+    font-weight: 200;
+}
+
+textarea {
+    width: 70%;
+    margin: 10px auto 50px;
+    resize: none;
+}
+
+.keyboard {
+    width: 540px;
+    text-align: center;
+    margin-left: 17%;
+}
+
+.key {
+    border: 2px solid #d3d3d3;
+    margin-right: 2px;
+    margin-bottom: 5px;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    outline: 0;
+}
+
+.key-space {
+    width: 415px;
+}
+
+.key-zero {
+    width: 147px;
+}
+
+.key:focus, .key-space:focus, textarea:focus {
+    outline: 0;
+}
+
+.numrow {
+    display: none;
+    margin-bottom: 10px;
+}
+
+.numpad {
+    width: 179px;
+}
+
+@media (max-width: 1000px) {
+    .numrow {
+        display: block;
+    }
+
+    .numpad {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .key {
+        width: 20px;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .key-space {
+        width: 265px;
+    }
+
+    .keyboard {
+        margin: auto;
+        padding: 0;
+    }
+}
+
+@media (max-width: 410px) {
+    .keyboard {
+        margin-left: -63px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 345px) {
+    .keyboard {
+        margin-left: -120px;
+        padding: 0;
+    }
+}
