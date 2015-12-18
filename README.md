@@ -1,4 +1,4 @@
-My project at Coursera for [Responsive Website Development and Design Specialization](https://www.coursera.org/specializations/website-development) course.
+My project at Coursera for [Responsive Website Development and Design](https://www.coursera.org/specializations/website-development) specialization.
 
 **Environment**:
 * HTML
@@ -6,3 +6,4 @@ My project at Coursera for [Responsive Website Development and Design Specializa
 * JavaScript
 * Bootstrap
 * jQuery
+* Handlebars
