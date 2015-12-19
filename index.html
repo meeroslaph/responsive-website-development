@@ -17,74 +17,95 @@
   </div>
 
   <div class="container">
-    <script id="numrow-template" type="text/x-handlebars-template">
-      <div class="col-md-6 keyboard">
-        {{#each category.[0].keys}}
-        <button name="{{this}}" type="button" class="btn key"></button>
-        {{/each}}
-      </div>
-    </script>
     <div class="row numrow">
+
+      <script id="numrow-template" type="text/x-handlebars-template">
+        <div class="col-md-6 keyboard">
+          {{#each numrow}}
+          <button name="{{this}}" type="button" class="btn key"></button>
+          {{/each}}
+        </div>
+      </script>
+
     </div>
     <div class="row">
-      <div class="col-md-6 keyboard">
-        <button name="Q" type="button" class="btn key"></button>
-        <button name="W" type="button" class="btn key"></button>
-        <button name="E" type="button" class="btn key"></button>
-        <button name="R" type="button" class="btn key"></button>
-        <button name="T" type="button" class="btn key"></button>
-        <button name="Y" type="button" class="btn key"></button>
-        <button name="U" type="button" class="btn key"></button>
-        <button name="I" type="button" class="btn key"></button>
-        <button name="O" type="button" class="btn key"></button>
-        <button name="P" type="button" class="btn key"></button>
+      <div class="col-md-6 keyboard" name="first-row">
+
+        <script id="first-row-template" type="text/x-handlebars-template">
+          {{#each first_row}}
+          <button name="{{this}}" type="button" class="btn key"></button>
+          {{/each}}
+        </script>
+
       </div>
-      <div class="col-md-6 numpad">
-        <button name="7" type="button" class="btn key"></button>
-        <button name="8" type="button" class="btn key"></button>
-        <button name="9" type="button" class="btn key"></button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 keyboard">
-        <button name="A" type="button" class="btn key"></button>
-        <button name="S" type="button" class="btn key"></button>
-        <button name="D" type="button" class="btn key"></button>
-        <button name="F" type="button" class="btn key"></button>
-        <button name="G" type="button" class="btn key"></button>
-        <button name="H" type="button" class="btn key"></button>
-        <button name="J" type="button" class="btn key"></button>
-        <button name="K" type="button" class="btn key"></button>
-        <button name="L" type="button" class="btn key"></button>
-      </div>
-      <div class="col-md-6 numpad">
-        <button name="4" type="button" class="btn key"></button>
-        <button name="5" type="button" class="btn key"></button>
-        <button name="6" type="button" class="btn key"></button>
+      <div class="col-md-6 numpad" name="first-numpad-row">
+
+        <script id="first-numpad-row-template" type="text/x-handlebars-template">
+          {{#each first_numpad_row}}
+          <button name="{{this}}" type="button" class="btn key"></button>
+          {{/each}}
+        </script>
+
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6 keyboard">
-        <button name="Z" type="button" class="btn key"></button>
-        <button name="X" type="button" class="btn key"></button>
-        <button name="C" type="button" class="btn key"></button>
-        <button name="V" type="button" class="btn key"></button>
-        <button name="B" type="button" class="btn key"></button>
-        <button name="N" type="button" class="btn key"></button>
-        <button name="M" type="button" class="btn key"></button>
+      <div class="col-md-6 keyboard" name="second-row">
+
+        <script id="second-row-template" type="text/x-handlebars-template">
+          {{#each second_row}}
+          <button name="{{this}}" type="button" class="btn key"></button>
+          {{/each}}
+        </script>
+
       </div>
-      <div class="col-md-6 numpad">
-        <button name="1" type="button" class="btn key"></button>
-        <button name="2" type="button" class="btn key"></button>
-        <button name="3" type="button" class="btn key"></button>
+      <div class="col-md-6 numpad" name="second-numpad-row">
+
+        <script id="second-numpad-row-template" type="text/x-handlebars-template">
+          {{#each second_numpad_row}}
+          <button name="{{this}}" type="button" class="btn key"></button>
+          {{/each}}
+        </script>
+
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6 keyboard">
-        <button name="space" type="button" class="btn key key-space"></button>
+      <div class="col-md-6 keyboard" name="third-row">
+
+        <script id="third-row-template" type="text/x-handlebars-template">
+          {{#each third_row}}
+          <button name="{{this}}" type="button" class="btn key"></button>
+          {{/each}}
+        </script>
+
       </div>
-      <div class="col-md-2 numpad">
-        <button name="0" type="button" class="btn key key-zero"></button>
+      <div class="col-md-6 numpad" name="third-numpad-row">
+
+        <script id="third-numpad-row-template" type="text/x-handlebars-template">
+          {{#each third_numpad_row}}
+          <button name="{{this}}" type="button" class="btn key"></button>
+          {{/each}}
+        </script>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 keyboard" name="fourth-row">
+
+        <script id="fourth-row-template" type="text/x-handlebars-template">
+          {{#each fourth_row}}
+          <button name="{{this}}" type="button" class="btn key key-space"></button>
+          {{/each}}
+        </script>
+
+      </div>
+      <div class="col-md-2 numpad" name="fourth-numpad-row">
+
+        <script id="fourth-numpad-row-template" type="text/x-handlebars-template">
+          {{#each fourth_numpad_row}}
+          <button name="{{this}}" type="button" class="btn key key-zero"></button>
+          {{/each}}
+        </script>
+
       </div>
     </div>
   </div>
